@@ -40,8 +40,6 @@ answer = eval(equation)
 
 print(f"\n{equation} = \n {answer}")
 
-#for debug
-# print(expression)
 
 
 

@@ -22,36 +22,28 @@ print("""
 
 digits_num = int(input("How many numbers are in your expression?\n"))
 
-# step = digits_num / digits_num
-if (digits_num == 1 ) or (digits_num % 10 == 1):
-  ending = "st"
-elif (digits_num == 2 ) or (digits_num % 10 == 2):
-  ending = "nd"
-elif (digits_num == 3 ) or (digits_num % 10 == 3):
-  ending = "rd"
-else:
-  ending = "th"
+expression = []
 
-step = 1
+for i in range(1, digits_num + 1, 1):
+  num = str(input(f"\nWhat is the {i} number?: "))
+  expression.append(num)
 
-numbers = []
-operations = []
+  operation = str(input("\nWhat's the operation? If you are finished type ""done"": "))
+  if operation == "done":
+    break
+  else:
+    expression.append(operation)
 
-for i in range(digits_num):
-  num = int(input(f"\nWhat is the {step}{ending} number?\n"))
-  numbers.append(num)
-  step += 1
 
-  operation = str(input("\nWhat's the operation?\n"))
-  operations.append(operation)
-  
-print(f"\n {numbers}")
-print(operations)
+equation = "".join(expression)
+answer = eval(equation)
 
-if operations[0] == "*":
-  answer = numbers[0] * numbers[1]
+print(f"\n{equation} = \n {answer}")
 
-print(answer)
+#for debug
+# print(expression)
+
+
 
 
 

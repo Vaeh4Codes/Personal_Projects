@@ -1,0 +1,141 @@
+The A.U.T.O.M.A.T.E Framework
+A — Annoyance (define it in 1 sentence)
+
+Answer:
+
+What exactly is annoying?
+
+When does it happen?
+
+How often per week?
+
+One-sentence format:
+
+“I want a tool that ___ so I don’t have to ___.”
+
+If you can’t write this sentence, the problem is too big.
+
+U — User story + success criteria
+
+Answer:
+4) What does “done” look like? (output)
+5) What is the minimum version that’s still useful? (MVP)
+6) What would make it fail? (constraints)
+
+Example:
+
+Done = “All screenshots renamed with date + label”
+
+MVP = “Rename all to timestamp only”
+
+Fail = “Overwrites files / breaks if folder is empty”
+
+T — Task breakdown (Input → Transform → Output)
+
+Answer:
+7) Input: where does data come from? (folder/file/text/web)
+8) Transform: what rules change it?
+9) Output: where does it go? (file, console, new folder)
+
+Write it like this:
+
+Input:
+
+Transform:
+
+Output:
+
+If you can’t fill these, you’re still in “idea mode,” not engineering mode.
+
+O — Outline the algorithm (in plain English)
+
+Answer:
+10) What are the steps in order?
+11) What loops/conditions are needed?
+12) What edge cases exist?
+
+Write a numbered list without code.
+
+Example:
+
+Read all files in folder
+
+Filter only .png
+
+For each file, compute new name
+
+If name exists, add counter
+
+Rename file
+
+Print summary
+
+This becomes your code skeleton.
+
+M — Make the Ugly v1 (no perfection)
+
+Rules:
+
+No refactoring yet
+
+No fancy features
+
+No “clean architecture”
+
+Just make it work
+
+Stop condition: it works on 3 test cases.
+
+A — Add one upgrade (forces learning)
+
+Pick exactly ONE:
+
+--dry-run mode
+
+logging instead of print
+
+error handling + helpful messages
+
+unit tests for core function
+
+config file (.json)
+
+CLI args with argparse
+
+This is what turns “script” into “engineering.”
+
+T — Test like you’re trying to break it
+
+Answer:
+13) What are 5 ways this can fail?
+14) What will your tool do in each case?
+
+Minimum test set:
+
+empty input
+
+weird characters
+
+duplicates
+
+missing permissions
+
+wrong file type
+
+E — Explain + Extract the pattern (make it stick)
+
+This is the memory step.
+
+Write a mini README with:
+15) What problem it solves
+16) Input/transform/output
+17) What you learned
+18) What you’d do next time
+
+Then extract reusable snippets into your “automation playbook”:
+
+file loop
+
+argparse template
+
+logging setup

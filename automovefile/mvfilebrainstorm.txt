@@ -1,0 +1,37 @@
+Inconvenience: moving a file to another location in command line 
+
+[A] I want a program that takes a file input and moves it to another location
+
+[U]  Done = in command line i can input  files and output locations, and the file is automatically moved
+    MVP = in command line i can ONE input a file and ONE output location, and the file is automatically moved
+
+[T] Input = the file I specify
+    Transform:
+    Outputs: file is moved to appropriate location, and success or failure statement is printed
+
+[O] 
+    1. Ask for file input via command line
+    2. Search file system for file/ check if exits
+        - If dosn’t exist return error message via command line
+    3.Find and store full path of the file
+    4. Ask for file destination via command line
+    5. If necessary find full path of the destination 
+    6. Check if destination path exists
+        - If dosn’t exist return error message via command line
+    7. Move file to destination path
+    8. Print success statement or failure statement
+    9. End 
+
+[M]
+
+
+[A]
+
+
+[T]
+
+
+[E]
+
+
+

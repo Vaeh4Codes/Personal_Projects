@@ -56,10 +56,5 @@ while move_file == True:
     verify_file = file_verification(file_path)
 
 
-      
-
-    
-    # print("computing...")
-    # move_file = False
 
 

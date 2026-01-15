@@ -1,0 +1,26 @@
+Steps
+
+1. Create a system that pulls and organizes emails in stared folder (using SqLite)
+  - Design sqlLite database schema for messages pulled from stared inbox
+  - Map Gmail concepts to your schema
+  - Create an ingestion syncing loop
+  - Query gmail for stared messages
+  - Fetch full metadata for each message
+  - Deduplicate + upsert (so you can run it daily safely)
+  - Store raw + normalized data (two-layer storage)
+  - Keep a sync cursor (so you don’t fetch everything every time
+
+
+Create a system that pulls and organizes emails in stared folder (using SqLite)
+Design sqlLite database schema for messages pulled from stared inbox
+ Map Gmail concepts to your schema
+Create an ingestion syncing loop
+Query gmail for stared messages
+Fetch full metadata for each message
+Deduplicate + upsert (so you can run it daily safely)
+Store raw + normalized data (two-layer storage)
+Keep a sync cursor (so you don’t fetch everything every time
+
+
+
+

@@ -1,7 +1,7 @@
 import sqlite3
 
 #sets the location of where the database is
-DB_PATH = "/Users/nevaehdickerson/Personal_Projects/emailremind/storedMail.db"
+DB_PATH = "/Users/nevaehdickerson/Personal_Projects/emailremind/mail_data/storedMail.db"
 
 
 def get_db_connection():
